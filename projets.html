@@ -8,15 +8,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
   <header>
-    <div>
+      <div>
       <a href="">mon portfolio</a>
     </div>
     <nav>
       <ul>
-        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="index.html">Accueil</a></li>
         <li><a href="projets.html">projet</a></li>
         <li><a href="passions.html">passions</a></li>
         <li><a href="divertissement.html">divertissement</a></li>
@@ -24,85 +25,124 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <section id="projets" class="projets">
-      <div class="conteneur">
-        <h1>Mes projets</h1>
-        <div class="projets">
-          <img src="images/e commerce.jpeg" alt="e commerce" width="300">
-          <h2>site E-commerce</h2>
-          <p>une boutique en ligne complete developée avec HTML ,CSS et javaScript pur.</p>
-          <a href="" class="small">code</a>
-          <a href="">demo</a>
-
-
-        </div>
-        
-        <div>
-        <img src="images/grce.jpeg" alt="grce" width="300">
-        <h2>Gestion de taches</h2>
-        <p>Application web pour organiser ses projets quotidiens avec stockage local.</p>
-        <a href="" class="smal">code</a>
-        <a href="">demo</a>
-
-      </div>
-
-         <div class="projets">
-          <img src="images/luk.jpeg" alt="luk" width="300">
-          <h2>Blog personnel</h2>
-          <p>Projet en cours de migration vers Laravel pour apprendre le backend.</p>
-          <a href="" class="small">code</a>
-          <a href="">demo</a>
-
-
-        </div>  
-
-         <div class="projets">
-          <img src="images/analyse.jpeg" alt="analyse" width="300">
-          <h2>Dashboard d'Analyse </h2>
-          <p>visualisation de données dynamiques avec python  et la bibliotheque matplotlib.</p>
-          <a href="" class="small">code</a>
-          <a href="">demo</a>
-
-
-        </div>  
-
-         <div class="projets">
-          <img src="images/meteo.jpeg" alt="meteo" width="300">
-          <h2>Application météo</h2>
-          <p>une application utilisant une API en temps réel pour afficher la météo mondiale.</p>
-          <a href="" class="small">code</a>
-          <a href="">demo</a>
-
-
-        </div>  
-
-         <div class="projets">
-          <img src="images/maquette.jpeg" alt="maquette" width="300">
-          <h2>Maquette mobile UI</h2>
-          <p>conception d'une interface utilisateur moderne pour une application de fitness.</p>
-          <a href="" class="small">code</a>
-          <a href="">demo</a>
-
-
-        </div>  
-
-
-        
-
-      </div>
-      
-
-    </section>
-
-    </div>
+    <main>
+    <h1>voici mes projets</h1>
   </main>
+  <section class="projets">
+     <h2>mes realisations</h2>
+     <div class="underline"></div>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <img src="images/e commerce.jpeg" alt="Site E-commerce" width="300">
+            <div class="content">
+                <h3>Site E-commerce</h3>
+                <p>Une boutique en ligne complète développée avec HTML, CSS et JavaScript pur.</p>
+                <div class="tags">
+                    <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+                </div>
+            </div>
+            <div class="footer-card">
+                <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/grce.jpeg" alt="Gestionnaire de Tâches" width="300">
+            <div class="content">
+                <h3>Gestionnaire de Tâches</h3>
+                <p>Application web pour organiser ses projets quotidiens avec stockage local.</p>
+                <div class="tags">
+                    <span class="tag">Python</span><span class="tag">Flask</span>
+                </div>
+            </div>
+            <div class="footer-card">
+                <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/luk.jpeg" alt="Blog Personnel" width="300">
+            <div class="content">
+                <h3>Blog Personnel</h3>
+                <p>Projet en cours de migration vers Laravel pour apprendre le backend.</p>
+                <div class="tags">
+                    <span class="tag">PHP</span><span class="tag">Laravel</span>
+                </div>
+            </div>
+            <div class="footer-card">
+                <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                <span class="status"><i class="fa-solid fa-clock"></i> Bientôt</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/analyse.jpeg" alt="Dashboard d'Analyse" width="300">
+            <div class="content">
+                <h3>Dashboard d'Analyse</h3>
+                <p>Visualisation de données dynamiques avec Python et la bibliothèque Matplotlib.</p>
+                <div class="tags">
+                    <span class="tag">Python</span><span class="tag">Data</span>
+                </div>
+            </div>
+            <div class="footer-card">
+                <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/meteo.jpeg" alt="Application Météo" width="300">
+            <div class="content">
+                <h3>Application Météo</h3>
+                <p>Une application utilisant une API en temps réel pour afficher la météo mondiale.</p>
+                <div class="tags">
+                    <span class="tag">JavaScript</span><span class="tag">API</span>
+                </div>
+            </div>
+            <div class="footer-card">
+                <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/maquette.jpeg" alt="Maquette Mobile UI" width="300">
+            <div class="content">
+                <h3>Maquette Mobile UI</h3>
+                <p>Conception d'une interface utilisateur moderne pour une application de fitness.</p>
+                <div class="tags">
+                    <span class="tag">Figma</span><span class="tag">Design</span>
+                </div>
+            </div>
+            <div class="footer-card">
+                <a href="#"><i class="fa-solid fa-pen-nib"></i> Design</a>
+                <a href="#"><i class="fa-solid fa-eye"></i> Aperçu</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+  
   <footer>
     <h6><i>© 2026 GRACIA. Tous droits réservés.</i></h6>
             
-              <a href="#">linkedin</a>
-              <a href="#">GitHub</a>
-              <a href="#">x (twitter)</a>
+              <div class="socials">
+    <a href="https://github.com/TON_PROFIL" target="_blank">
+        <i class="fa-brands fa-github"></i>
+    </a>
+
+    <a href="https://linkedin.com/in/TON_PROFIL" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+    </a>
+
+    <a href="https://twitter.com/TON_PROFIL" target="_blank">
+        <i class="fa-brands fa-x-twitter"></i>
+    </a>
+</div>
               
   </footer>
   
